@@ -103,9 +103,18 @@
             <ul class="list work-list">
                 <li class="work-list-item">
                     <p class="work-list-item__overlay">Десктопні додатки</p>
-                    <!-- <img class="work-list-item__img" src="./imeges/box2.jpg" alt="Розробка дизайну"> -->
+                    <picture>
+                        <source 
+                        srcset="./imeges/imeg-desktop/work2.jpg 1x, ./imeges/imeg-desktop/work2@2x.jpg 2x"
+                        media="min-width: 1200px"/>
+
+                        <img class="work-list-item__img" src="./imeges/box1.jpg" alt="Розробка дизайну">
+                    </picture>
 
                     
+                    <!-- <img class="work-list-item__img" src="./imeges/box1.jpg" alt="Розробка дизайну" 
+                    srcset="./imeges/imeg-desktop/work1.jpg 1x, ./imeges/imeg-desktop/work3@2x.jpg 2x"> -->
+
                 </li>
                 <li class="work-list-item">
                     <p class="work-list-item__overlay">Мобільні додатки</p>
