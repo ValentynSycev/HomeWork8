@@ -89,7 +89,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: opasiti 250ms liner;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -103,6 +103,10 @@ body {
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu__close-btn {
@@ -119,6 +123,9 @@ body {
   height: 40px;
   width: 40px;
 }
+.mobile-menu__close-btn:hover .mobile-menu__close-icon {
+  fill: var(--active-color-blue);
+}
 
 .mobile-menu__link {
   display: block;
@@ -128,9 +135,60 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--active-color-blue);
+}
+
+.mobile-menu__link--active {
+  color: var(--active-color-blue);
+}
 
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-menu__phone {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--active-color-blue);
+  padding-bottom: 32px;
+}
+
+.mobile-menu__email {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
+  padding-bottom: 32px;
+}
+
+.mobile-menu__social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu__social-item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--active-color-blue);
+}
+
+.mobile-menu__social--after::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
 }
 
 .logo {
@@ -499,6 +557,37 @@ body {
   }
   .menu__link-color {
     color: var(--active-color-blue);
+  }
+  .menu__link-color::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--active-color-blue);
+  }
+  .menu__item {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .menu__link-color-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--active-color-blue);
+    transform: scale(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu__link-color-active:hover::after,
+.menu__link-color-active:focus::after {
+    transform: scale(1);
   }
 }
 .section-title {
