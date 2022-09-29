@@ -26,6 +26,11 @@
                         <a class="menu__link link menu__link-color-active" href="#">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="open-mobile-menu js-open-menu" >
+                <svg class="open-mobile-menu__btn">
+                    <use href="./imeges/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
             <ul class="list contact-list">
                 <li class=" menu__item">
                     <a class=" mail-address link" href="mailto:info@devstudio.com">
@@ -43,17 +48,32 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu js-menu-container" id="mobile-menu" >
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn js-close-menu" >
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./imeges/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul>
+                    <li class="list"><a class="link mobile-menu__link" href="">Студія</a></li>
+                    <li class="list"><a class="link mobile-menu__link" href="">Портфоліо</a></li>
+                    <li class="list"><a class="link mobile-menu__link" href="">Контакти</a></li>
+                </ul>
+            </div>
+
+        </div>
     </header>
    <main>
     <!-- ========heading========= -->
-    <section class="section-title">
+    <!-- <section class="section-title">
         <div class="container">
             <h1 class="section-title__heading">Ефективні рішення для вашого бізнесу</h1>
             <button class="modal-open-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-    </section>
+    </section> -->
     <!-- =========preference========= -->
-    <section class="section-preference">
+    <!-- <section class="section-preference">
         <div class="container">
             <h2 class="preference">Наші переваги</h2>
             <ul class="list preference-container">
@@ -95,9 +115,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- =========section-work========= -->
-    <section class="section-work">
+    <!-- <section class="section-work">
         <div class="container">
             <h2 class="headline">Чим ми займаємося</h2>
             <ul class="list work-list">
@@ -106,14 +126,11 @@
                     <picture>
                         <source 
                         srcset="./imeges/imeg-desktop/work2.jpg 1x, ./imeges/imeg-desktop/work2@2x.jpg 2x"
-                        media="min-width: 1200px"/>
+                        media="(min-width: 1200px)"/>
 
                         <img class="work-list-item__img" src="./imeges/box1.jpg" alt="Розробка дизайну">
                     </picture>
 
-                    
-                    <!-- <img class="work-list-item__img" src="./imeges/box1.jpg" alt="Розробка дизайну" 
-                    srcset="./imeges/imeg-desktop/work1.jpg 1x, ./imeges/imeg-desktop/work3@2x.jpg 2x"> -->
 
                 </li>
                 <li class="work-list-item">
@@ -126,10 +143,10 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- ======section-team=========== -->
-    <section class="section-team">
+    <!-- <section class="section-team">
         <div class="container">
             <h2 class="headline">Наша команда</h2>
             <ul class="list team-list">
@@ -291,10 +308,10 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- ==========section-customers========== -->
-    <section class="section-customers">
+    <!-- <section class="section-customers">
         <div class="container">
             <h2 class="headline">Постійні клієнти</h2>
             <ul class="customers-list list">
@@ -343,9 +360,9 @@
             </ul>
         </div>
     </section>
-   </main>
+   </main> -->
    <!-- =====footer===== -->
-   <footer class="footer">
+   <!-- <footer class="footer">
     <div class="container footer-container">
         <div class="footer-contact">
             <div class="logo-container">
@@ -410,10 +427,10 @@
             </button>
         </form>
     </div>
-   </footer>
+   </footer> -->
 
    <!-- ============modal========== -->
-   <div class="backdrop is-hidden" data-modal>
+   <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-icon">
@@ -484,8 +501,9 @@
             <button type="submit" class="modal-btn-submit">Відправити</button>
         </form>
     </div>
-   </div>
+   </div> -->
 
-   <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
+   <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
