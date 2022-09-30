@@ -1,11 +1,25 @@
-.menu-container,
-.contact-list {
-    display: none;
+@media screen and (max-width:767px) {
+
+    .menu-container,
+    .contact-list {
+    display: none;}
+
+    .open-mobile-menu{
+        line-height: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .open-mobile-menu__btn {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .page-header__container {
@@ -15,32 +29,21 @@
     
 }
 
-.open-mobile-menu{
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-}
-
-.open-mobile-menu__btn {
-    width: 40px;
-    height: 40px;
-}
-
 @media screen and (min-width:768px) {
+    .page-header {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .open-mobile-menu {
+        display: none;
+    }
+
     .menu-container{
     display: flex;
     align-items: center;
     column-gap: 50px;}
-
-    .page-header {
-      border-bottom: 1px solid #ECECEC;
-    }
-
-    .page-header__container {
-    display: flex;
-    align-items: center;
-    }
 
     .page-nav {
     display: flex;
@@ -53,9 +56,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-color);
-
-        &:active {
-        color: var(--active-color-blue);}
     }
     
     .menu__link-color {
@@ -65,7 +65,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -1px;
+        bottom: -33px;
         width: 100%;
         height: 4px;
         border-radius: 2px;
@@ -73,9 +73,11 @@
     }
 
     .menu__item {
-        position: relative;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        position: relative;    
+    }
+    
+    .mail-address {
+        padding-bottom: 10px;
     }
     
     
@@ -83,7 +85,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -1px;
+        bottom: -33px;
     
         width: 100%;
         height: 4px;
@@ -96,5 +98,19 @@
     .menu__link-color-active:hover::after,
     .menu__link-color-active:focus::after {
         transform: scale(1);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .mail-address {
+        padding-bottom: 0px;
+    }
+
+    .menu__link-color::after {
+        bottom: -28px;
+    }
+
+    .menu__link-color-active::after {
+        bottom: -28px;
     }
 }

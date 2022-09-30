@@ -1,8 +1,13 @@
 .contact-list {
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
+    // column-gap: 50px;
+
     display: flex;
-    align-items: center;
     margin-left: auto;
-    column-gap: 50px;
+    column-gap: 10px;
+    flex-direction: column;
 }
 
 .mail-address,
@@ -38,4 +43,10 @@
     .contact-phone-number:hover &,
     .contact-phone-number:focus & 
     {fill:#2196F3;}
+}
+
+@media screen and (min-width:1200px) {
+    .contact-list {
+        column-gap: 30px;
+        flex-direction: row;}
 }
