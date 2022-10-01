@@ -105,6 +105,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .footer-contact {
+        text-align: start;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -132,10 +136,4 @@
         margin-bottom: 0;
         width: 358px;
     }
-
-    .footer-contact {
-        text-align: start;
-    }
-
-
 }
