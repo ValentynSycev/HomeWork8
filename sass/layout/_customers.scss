@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc((100% - 30px)/2);
 }
 
 .customers-list__link {
@@ -43,15 +43,15 @@
     fill: var(--active-color-blue);}
 }
 
-@media screen and (min-width:480px) {
-    .customers-list__item {
-        width: 210px;
-    }
-}
+// @media screen and (min-width:480px) {
+//     .customers-list__item {
+//         width: 210px;
+//     }
+// }
 
 @media screen and (min-width:768px) {
     .customers-list__item {
-        width: 226px;
+        width: calc((100% - 60px) / 3);
     }
 }
 

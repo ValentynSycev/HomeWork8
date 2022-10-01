@@ -91,15 +91,15 @@
 
 .modal-form__check-field {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--text-color-grey);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-}
+    }
 
 .modal-form__check-field>a {
     color: var(--active-color-blue);
