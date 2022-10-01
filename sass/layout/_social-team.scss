@@ -1,12 +1,13 @@
 .section-team {
     background-color:var(--background-color-grey);
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .team-list {
     display: flex;
-    column-gap: 30px;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .team-list__member {
@@ -75,5 +76,24 @@
     fill:var(--background-color-white);}
 }
 
+@media screen and (min-width:768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+    .team-list__member{
+        flex-basis: 354px;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+        .team-list__member{
+        flex-basis: 270px;
+    }
+
+    .section-team {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+}

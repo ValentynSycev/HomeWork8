@@ -1,8 +1,6 @@
-
-
 .section-preference {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .preference-container {
@@ -65,5 +63,10 @@
 @media screen and (min-width:1200px) {
     .preference-list {
         width: 270px;
+    }
+
+    .section-preference {
+        padding-top: 95px;
+        padding-bottom: 95px;
     }
 }

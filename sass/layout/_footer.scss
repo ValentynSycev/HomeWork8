@@ -4,8 +4,17 @@
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+    // align-items: baseline;
+    flex-direction: column;
+
+}
+
 .footer-contact {
-    margin-right: 70px;
+    // margin-right: 70px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .logo-container {
@@ -33,11 +42,6 @@
     color: var(--rgba-color);
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
 .footer-haedliner {
     font-weight: 700;
     font-size: 14px;
@@ -46,11 +50,14 @@
     text-transform: uppercase;
     color: var(--text-color-white);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-logo-list{
     display: flex;
     column-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .footer-social-link {
@@ -75,11 +82,11 @@
 }
 
 
-.footer-form {
-    margin-left: auto;
-}
+// .footer-form {
+//     margin-left: auto;
+// }
 
-.footer-form-input {
+.footer-form__input {
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -87,10 +94,56 @@
     padding: 15px 16px;
     outline: none;
     color:var(--text-color-white);
-    margin-right: 12px;
+    // margin-right: 12px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .footer-form-img {
     fill: #FFFFFF;
     margin-left: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-container__tumb {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .footer-form__input {
+        width: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-haedliner {
+        text-align: start;
+    }
+
+    .footer-contact{
+        margin-bottom: 0;
+        margin-right: 70px;
+    }
+
+    .footer-form__tumb {
+        display: flex;
+        justify-content: space-between;
+        width: 570px;
+    }
+
+    .footer-form__input {
+        margin-bottom: 0;
+        width: 358px;
+    }
+
+
 }
