@@ -13,10 +13,15 @@
 
 .logo-upper {
     color: var(--logo-color);
-    margin-right: 93px;
 }
 
 .logo-down {
     color:var(--text-color-white);
     text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        margin-right: 93px;
+    }
 }

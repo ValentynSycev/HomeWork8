@@ -16,16 +16,21 @@
     <header class="page-header">
         <div class="container page-header__container">
             <nav class="page-nav">
-                <a class="logo logo-upper" href="https://valentynsycev.github.io/HomeWork7/index.html"><span class="logo-blue">Web</span>Studio</a>
+                <a class="logo logo-upper" href="https://valentynsycev.github.io/HomeWork8/index.html"><span class="logo-blue">Web</span>Studio</a>
                 <ul class="menu list menu-container">
                     <li class="menu__item">
-                        <a class="menu__link link  menu__link-color-active" href="https://valentynsycev.github.io/HomeWork7/index.html">Студія</a></li>
+                        <a class="menu__link link  menu__link-color-active" href="https://valentynsycev.github.io/HomeWork8/index.html">Студія</a></li>
                     <li class="menu__item">
-                        <a class="menu__link link menu__link-color" href="https://valentynsycev.github.io/HomeWork7/portfolio.html">Портфоліо</a></li>
+                        <a class="menu__link link menu__link-color" href="https://valentynsycev.github.io/HomeWork8/portfolio.html">Портфоліо</a></li>
                     <li class="menu__item">
-                        <a class="menu__link link menu__link-color-active" href="#">Контакти</a></li>
+                        <a class="menu__link link menu__link-color-active" href="">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="open-mobile-menu js-open-menu" >
+                <svg class="open-mobile-menu__btn">
+                    <use href="./imeges/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
             <ul class="list contact-list">
                 <li class=" menu__item">
                     <a class=" mail-address link" href="mailto:info@devstudio.com">
@@ -43,12 +48,51 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu js-menu-container" id="mobile-menu" >
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn js-close-menu" >
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./imeges/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list">
+                    <li class="list mobile-menu__item">
+                        <a class="link mobile-menu__link mobile-menu__link--active" 
+                        
+                        href="https://valentynsycev.github.io/HomeWork8/index.html">Студія</a></li>
+                    <li class="list mobile-menu__item"><a class="link mobile-menu__link" 
+                        href="https://valentynsycev.github.io/HomeWork8/portfolio.html">Портфоліо</a></li>
+                    <li class="list mobile-menu__item"><a class="link mobile-menu__link" 
+                        href="">Контакти</a></li>
+                </ul>
+                <div class="mobile-menu__thumb">
+                    <ul class="mobile-menu__contact-list">
+                        <li class="list mobile-item" ><a href="tel:+380961111111" class="link mobile-menu__phone">+38 096 111 11 11</a></li>
+                        <li class="list" ><a href="mailto:info@devstudio.com" class="link mobile-menu__email">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-menu__social-list">
+                        <li class="list mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link mobile-menu__social--after" href="">Instagram</a>
+                        </li>
+                        <li class="list mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link mobile-menu__social--after" href="">Twitter</a>
+                        </li>
+                        <li class="list mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link mobile-menu__social--after" href="">Facebook</a>
+                        </li>
+                        <li class="list mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="catalog">
             <div class="container">
                 <!-- ======filter====== -->
-                <ul class="list filter button-container ">
+                <ul class="list catalog-button-container ">
                     <li><button class="filter-button" type="button">Усі</button></li>
                     <li><button class="filter-button" type="button">Веб-сайти</button></li>
                     <li><button class="filter-button" type="button">Додатки</button></li>
@@ -58,111 +102,336 @@
                 <!-- =======project====== -->
                 <ul class="list project-list">
                     <li class="project" >
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio1.jpg" alt="Дизайн веб-сторінки">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio1.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio1@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio1.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio1@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio1.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio1@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio1.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio1@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio1.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio1@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio1.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio1@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio1.jpg" alt="Дизайн веб-сторінки">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Технокряк</h3>
-                                <p class="project-text" >Веб-сайт</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Технокряк</h3>
+                                <p class="project-container__text" >Веб-сайт</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio2.jpg" alt="Постер з двума баскетболістами">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio2.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio2@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio2.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio2@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio2.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio2@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio2.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio2@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio2.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio2@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio2.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio2@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio2.jpg" alt="Постер з двума баскетболістами">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Постер New Orlean vs Golden Star</h3>
-                                <p class="project-text" >Дизайн</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Постер New Orlean vs Golden Star</h3>
+                                <p class="project-container__text" >Дизайн</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio3.jpg" alt="Дизайн додатку ресторану">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio3.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio3@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio3.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio3@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio3.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio3@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio3.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio3@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio3.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio3@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio3.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio3@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio3.jpg" alt="Дизайн додатку ресторану">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Ресторан Seafood</h3>
-                                <p class="project-text" >Додаток</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Ресторан Seafood</h3>
+                                <p class="project-container__text" >Додаток</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio4.jpg" alt="Навушники">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio4.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio4@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio4.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio4@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio4.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio4@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio4.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio4@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio4.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio4@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio4.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio4@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio4.jpg" alt="Навушники">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Проєкт Prime</h3>
-                                <p class="project-text" >Маркетинг</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Проєкт Prime</h3>
+                                <p class="project-container__text" >Маркетинг</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio5.jpg" alt="Дві коробки">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio5.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio5@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio5.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio5@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio5.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio5@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio5.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio5@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio5.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio5@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio5.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio5@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio5.jpg" alt="Дві коробки">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Проєкт Boxes</h3>
-                                <p class="project-text" >Додаток</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Проєкт Boxes</h3>
+                                <p class="project-container__text" >Додаток</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio6.jpg" alt="Веб-сайти">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio6.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio6@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio6.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio6@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio6.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio6@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio6.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio6@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio6.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio6@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio6.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio6@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio6.jpg" alt="Веб-сайти">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Inspiration has no Borders</h3>
-                                <p class="project-text" >Веб-сайт</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Inspiration has no Borders</h3>
+                                <p class="project-container__text" >Веб-сайт</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio7.jpg" alt="Журнал">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio7.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio7@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio7.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio7@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio7.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio7@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio7.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio7@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio7.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio7@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio7.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio7@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio7.jpg" alt="Журнал">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Видання Limited Edition</h3>
-                                <p class="project-text" >Дизайн</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Видання Limited Edition</h3>
+                                <p class="project-container__text" >Дизайн</p>
                             </div>
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio8.jpg" alt="Ярлик">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio8.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio8@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio8.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio8@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio8.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio8@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio8.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio8@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio8.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio8@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio8.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio8@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio8.jpg" alt="Ярлик">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Проєкт LAB</h3>
-                                <p class="project-text" >Маркетинг</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Проєкт LAB</h3>
+                                <p class="project-container__text" >Маркетинг</p>
                             </div>
 
                         </a>
                     </li>
                     <li class="project">
-                        <a class="project-link link" href="#">
-                            <div class="project-img-wrapper">
-                                <img src="./imeges/portfolio/portfolio9.jpg" alt="Людина працює за нойтбуком">
+                        <a class="project-link link" href="">
+                            <div class="project-img__wrapper">
+                                <picture>
+                                    <source srcset="./imeges/imeg-desktop/portfolio/webp/portfolio9.webp 1x, ./imeges/imeg-desktop/portfolio/webp/portfolio9@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-desktop/portfolio/jpg/portfolio9.jpg 1x, ./imeges/imeg-desktop/portfolio/jpg/portfolio9@2x.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+            
+                                    
+                                    <source srcset="./imeges/imeg-tablet/portfolio/webp/portfolio9.webp 1x, ./imeges/imeg-tablet/portfolio/webp/portfolio9@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-tablet/portfolio/jpg/portfolio9.jpg 1x, ./imeges/imeg-tablet/portfolio/jpg/portfolio9@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+            
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/webp/portfolio9.webp 1x, ./imeges/imeg-mobile/portfolio/webp/portfolio9@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"/>
+            
+                                    <source srcset="./imeges/imeg-mobile/portfolio/jpg/portfolio9.jpg 1x, ./imeges/imeg-mobile/portfolio/jpg/portfolio9@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+            
+                                    <img src="./imeges/portfolio/portfolio9.jpg" alt="Людина працює за нойтбуком">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project-cintainer">
-                                <h3 class="project-caption">Growing Business</h3>
-                                <p class="project-text" >Додаток</p>
+                            <div class="project-container">
+                                <h3 class="project-container__caption">Growing Business</h3>
+                                <p class="project-container__text" >Додаток</p>
                             </div>
                         </a>
                    </ul>
@@ -172,69 +441,75 @@
    <!-- =====footer===== -->
    <footer class="footer">
     <div class="container footer-container">
-        <div class="footer-contact">
-            <div class="logo-container">
-                <a class="logo logo-down" href="https://valentynsycev.github.io/HomeWork7/index.html"><span class="logo-blue">Web</span>Studio</a>
+        <div class="footer-container__tumb">
+            <div class="footer-contact">
+                <div class="logo-container">
+                    <a class="logo logo-down" href="https://valentynsycev.github.io/HomeWork8/index.html"><span class="logo-blue">Web</span>Studio</a>
+                </div>
+                <address>
+                    <ul class="list ">
+                        <li class="contact-item"><a class="link address-link" href="https://goo.gl/maps/NGYsfj5xvE9vm5nV7" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="contact-item"><a class="link footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="link footer-number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
             </div>
-            <address>
-                <ul class="list ">
-                    <li class="contact-item"><a class="link address-link" href="https://goo.gl/maps/NGYsfj5xvE9vm5nV7" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="contact-item"><a class="link footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="link footer-number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <div >
+                <p class="footer-haedliner">приєднуйтесь</p>
+                <ul class="list footer-logo-list">
+                    <li>
+                        <a href="" class="footer-social-link">
+                            <svg class="footer-logo-img" width="20px" height="20px">
+                                <use href="./imeges/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-social-link">
+                            <svg class="footer-logo-img" width="20px" height="20px">
+                                <use href="./imeges/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-social-link">
+                            <svg class="footer-logo-img" width="20px" height="20px">
+                                <use href="./imeges/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-social-link">
+                            <svg class="footer-logo-img" width="20px" height="20px">
+                                <use href="./imeges/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
-        </div>
-        <div >
-            <p class="footer-haedliner">приєднуйтесь</p>
-            <ul class="list footer-logo-list">
-                <li>
-                    <a href="#" class="footer-social-link">
-                        <svg class="footer-logo-img" width="20px" height="20px">
-                            <use href="./imeges/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-social-link">
-                        <svg class="footer-logo-img" width="20px" height="20px">
-                            <use href="./imeges/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-social-link">
-                        <svg class="footer-logo-img" width="20px" height="20px">
-                            <use href="./imeges/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-social-link">
-                        <svg class="footer-logo-img" width="20px" height="20px">
-                            <use href="./imeges/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
         <form class="footer-form">
             <p class="footer-haedliner">Підпишіться на розсилку</p>
-            <label class="footer-form-label">
-                <input                
-                    type="email"
-                    class="footer-form-input"
-                    required
-                    name="email for mailing list"
-                    placeholder="E-mail"
-                />
-            </label>
-            <button type="submit" class="footer-form-btn">Підписатися
-                <svg class="footer-form-img" width="24px" height="24px" >
-                    <use href="./imeges/sprite.svg#icon-plane"></use>
-                </svg>
-            </button>
+            <div class="footer-form__tumb">
+                <label class="footer-form-label">
+                    <input                
+                        type="email"
+                        class="footer-form__input"
+                        required
+                        name="email for mailing list"
+                        placeholder="E-mail"
+                    />
+                </label>
+                <button type="submit" class="footer-form-btn">Підписатися
+                    <svg class="footer-form-img" width="24px" height="24px" >
+                        <use href="./imeges/sprite.svg#icon-plane"></use>
+                    </svg>
+                </button>
+            </div>
         </form>
     </div>
    </footer>
+
+   <script src="./js/menu.js"></script>
 </body>
 </html>
