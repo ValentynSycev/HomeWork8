@@ -10,9 +10,13 @@
 
 }
 
+.footer-container__tumb{
+    margin-bottom: 60px;
+}
+
 .footer-contact {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .logo-container {
@@ -55,7 +59,7 @@
     display: flex;
     column-gap: 10px;
     justify-content: center;
-    margin-bottom: 20px;
+    // margin-bottom: 60px;
 }
 
 .footer-social-link {
@@ -93,6 +97,10 @@
 }
 
 @media screen and (min-width:768px) {
+    .footer-contact {
+        margin-bottom: 0;
+    }
+
     .footer-container__tumb {
         display: flex;
         justify-content: space-around;
@@ -112,6 +120,11 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .footer-container__tumb {
+        margin-bottom: 0px;
+    }
+    
 
     .footer-haedliner {
         text-align: start;
