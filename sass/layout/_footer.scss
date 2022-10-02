@@ -95,7 +95,7 @@
 @media screen and (min-width:768px) {
     .footer-container__tumb {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: baseline;
     }
 
@@ -104,10 +104,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .footer-contact {
-        text-align: start;
     }
 }
 
@@ -122,6 +118,7 @@
     }
 
     .footer-contact{
+        text-align: start;
         margin-bottom: 0;
         margin-right: 70px;
     }
